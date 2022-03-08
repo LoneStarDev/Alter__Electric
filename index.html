@@ -6,10 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <script
-      src="https://kit.fontawesome.com/ae94002ac5.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -21,11 +25,60 @@
     </nav>
 
     <div class="container container__hero">
+      <span class="background__title--grey"></span>
       <h1>Alter Electric Company</h1>
       <h2>
         Leading the industry in electrical contracting services since 1983.
       </h2>
-      <img src="images\NINTCHDBPICT000608572587.webp" alt="" />
+      <div class="slideshow__container">
+        <div class="mySlides fade">
+          <img
+            src="images\NINTCHDBPICT000608572587.webp"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img class="slide__image--fatherson"
+            src="images/alter_and_son.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/images.jpg" alt="" style="width: 100%" />
+          <div class="text"></div>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <div class="container container__titles">
+      <h2>Certified and trusted in our industry</h2>
+    </div>
+
+    <div class="container container__paragraph">
+      <p>
+        Alter Electric Company is certified in Vantage Controls and Lutron
+        Lighting Control systems with over 45 years of experience in the
+        electrical contractor industry. We pride ourselves in contuing to
+        advance our knowledge in emerging lighting technologies to give our
+        clients the best lighting experience the industry has to offer.
+      </p>
+    </div>
+
+    <div class="container container__certified">
+      <img class="images__certified" src="images/Legrand-Vantage.svg" alt="" />
     </div>
   </body>
+  <script src="JavaScript\index.js"></script>
 </html>
